@@ -1,0 +1,19 @@
+﻿@model PluralsightTutorial.ViewModels.HomePageViewModel
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Welcome to the List of table</h1>
+    <h3>@Model.CurrentMessage</h3>
+    <div class="container">
+        @foreach (var restaurant in Model.Restaurants)
+        {
+        <div class="col-lg-4">
+            <h3>@restaurant.Name</h3>
+        </div>
+        }
+    </div>
+    
+</body>
+</html>
